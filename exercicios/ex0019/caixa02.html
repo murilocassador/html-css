@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px; /*REMOVE A MARGEM DE TODA PAGIA, NECESSARIO PARA DEIXAR RODAPÉ GRUDADO*/
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px; /*SE O CABEÇALHO FOR GRUDADO, MARGIN:0PX; */
+        }
+        nav{
+            background-color: rgb(150, 150, 150);
+            padding: 3px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+            /*sombra   horizontal vertical espalhamento cor ( sempre black com transparencia */ )
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px 20px 0px;
+            /* se quiser formar um círculo - border-radius: 50%; */
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(143, 143, 143);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0%;
+        }
+
+        footer > p {
+            margin: 0px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+                <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, esse in. Ducimus laborum veniam necessitatibus expedita numquam officiis reiciendis, consequatur porro cum ea maxime ut voluptates ullam nemo dolore praesentium!</p>
+                <aside> 
+                    <p> Escrito por MIC </p>
+                </aside>    
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por M.Dev</p>
+    </footer>
+</body>
+</html>
