@@ -8,7 +8,66 @@
     --fonte-texto: "Sriracha", cursive;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /* o tamanho mínimo da ALTURA será 100% o tamanho da tela*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* transforma todas as letras em maiúscula, deixando a primeira um pouco maior */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a { /* poderiamos usar header a, footer a caso tenha links no body com diferentes configurações */
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover { /* poderiamos usar    header a:hover, footer a:hover    caso tenha links com ação hover no body com diferentes configurações */
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh; /* aumenta em 10% a altura da div em comparação a viewport (tela apresentada) */
+    padding-bottom: 10vh; /* aumenta em 10% a altura da div em comparação a viewport (tela apresentada) */
+    line-height: 2em; /*aumenta o espaçamento entre as linhas de texto */
+    padding-left: 30px; /* aumenta o espaçamento entre a lateral da pagina ao texto */
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 400px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
